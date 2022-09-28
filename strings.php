@@ -25,5 +25,5 @@ echo strstr(DOBRA_RADA, 'nie'). '<br>';
 echo substr(DOBRA_RADA, 10, 5). '<br>';
 echo str_pad(DOBRA_RADA, 37, '-_-', STR_PAD_BOTH). '<br>';
 ?>
-</body>
+</body>k
 </html>
