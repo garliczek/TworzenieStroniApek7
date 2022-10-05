@@ -18,7 +18,7 @@
 <p style="color: aliceblue; background-color: darkblue; font-weight: bold"><?php echo rand(900, 1000)?></p>
 <p style="color: aliceblue; background-color: darkblue; font-weight: bold"><?php echo sqrt(0)?></p>
 <p style="color: aliceblue; background-color: darkblue; font-weight: bold"><?php echo sqrt(64)?></p>
-<p style="color: aliceblue; background-color: darkblue; font-weight: bold"><?php echo sqrt(256)?></p>
+<p style="color: aliceblue; background-color: darkblue; font-weight: bold"><?phpj echo sqrt(256)?></p>
 <p style="color: aliceblue; background-color: darkblue; font-weight: bold;"><?= sqrt(65536)?></p>
 </body>
 </html>

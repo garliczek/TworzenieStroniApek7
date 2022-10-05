@@ -25,7 +25,7 @@ echo "Zmienna d ma wartość" .$d. "a funkcja is_int zwraca dla niej wynik";
 var_dump(is_float($d)); echo "<br>";
 echo "<br> <br> <br>";
 $suma=$x+$y;
-echo "Wynik dodawania $x i $y wynosi $suma". "<br>";
+echo "Wynik dodawania $x i $y wynosi $suma". "<br>";j
 $suma=$x-$y;
 echo "Wynik odejmowania $x i $y wynosi $suma". "<br>";
 $suma=$x/$y;
