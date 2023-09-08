@@ -1,0 +1,1 @@
+<h1>Tabela polaczenia</h1>
