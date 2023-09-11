@@ -3,6 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+tr, td, th {
+    border: 1px solid black;
+    padding: 6px;
+}
+table{
+    border-collapse:collapse;
+}
 body{
     height: 100vh;
 }
@@ -38,4 +45,7 @@ body{
     height: 40vh;
     background-color: wheat;
     padding: 30px;
+}
+.table {
+    border: solid black 1px;
 }

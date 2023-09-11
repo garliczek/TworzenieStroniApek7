@@ -1,6 +1,6 @@
 <?php
 $database='lasek';
-$password='yYaDLhreGB';
+$password='admin123';
 $servername='localhost';
 $username='lasek';
 $mysqliProceduralConection = mysqli_connect($servername, $username, $password, $database);
