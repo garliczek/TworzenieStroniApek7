@@ -31,8 +31,7 @@
     </style>
 </head>
 <body>
-
-
+ <?php include './include/dbconn.php'; ?>
 <div class="row">
     <div class="column1" style="background-color: deepskyblue;">
         <ul>
