@@ -1,30 +1,34 @@
-<?php
-if ($_SERVER["REQUEST_METHOD"] == "POST")
-{
-    $query = "INSERT INTO `dzialy` (Nazwa) VALUES ('" . $_POST['Nazwa'] . "')";
+<h1>Edytuj dane tabeli dzialy</h1>
+<div class="column2">
+    <?php
+    $Id_dzial = $_GET['id'];
+    $Nazwa = $_GET['Nazwa'];
 
-    if (mysqli_query($conn, $query)) {
-        echo '<h4 class="success">Dane zostały zedytowane</h4>';
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST")
+    {
+
+        $Nazwa = $_POST['Nazwa'];
+        $query = "UPDATE `dzialy` SET `Nazwa` = '".$Nazwa."' WHERE `dzialy`.`Id_dzial` = '$Id_dzial'";
+        $result = mysqli_query($conn, $query);
+
+        if ($result) {
+            echo "Poprawnie zedytowano rekord";
+            echo '<br><a href="?page=dzialy">Powrót</a>';
+        } else {
+            echo "Błąd edycji";
+        }
+
     } else {
-        echo '<h4 class="failure">Błąd w czasie edytowania:</h4><br>'
-            . mysqli_error($conn);
-    }
-} else {
+        echo '<form action="?page=dzialy_edytor&id='.$Id_dzial.'&Nazwa='.$Nazwa.'" method="post">
+            <table>
+                <tr><td>Id_dzial</td><td><input type="text" name="Id_dzial" id="Id_dzial" value="'.$Id_dzial.'" disabled </td></tr>
+                <tr><td>Nazwa</td><td><input type="text" name="Nazwa" id="Nazwa" value="'.$Nazwa.'"></td></tr>
+                <tr><td colspan="2"><center><button type="submit"/>Zapisz<button></center></td></tr>
+            </table>
+        </form>';}
     ?>
-    <form action="?page=dzialy_edytor" method="post">-->
-        <table>
-            <tr>
-                <td><label for="Id_dzial">Id_dzial</label></td>
-                <td><input readonly id="Id_dzial" name="Id_dzial" type="text"></td>
-            </tr>
-            <tr>
-                <td><label for="Nazwa">Nazwa</label></td>
-                <td><input id="Nazwa" maxlength="40" name="Nazwa" type="text"></td>
-            </tr>
-            <tr>
-                <td colspan="2" style="align-items:center;"><input type="submit" value="Zapisz"></td>
-            </tr>
-        </table>
-    </form>
-<?php } ?>
+</div>
+
+
 

@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     }
 } else {
   ?>
- <form action="?page=dzialy_dodaj" method="post">-->
+ <form action="?page=dzialy_dodaj" method="post">
             <table>
                 <tr>
                     <td><label for="Id_dzial">Id_dzial</label></td>

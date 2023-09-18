@@ -12,14 +12,14 @@
             float: left;
             width: 20%;
             padding: 10px;
-            height: 960px;
+            height: 963px;
 
         }
         .column2 {
             float: left;
             width: 80%;
             padding: 10px;
-            height: 950px;
+            height: 963px;
 
         }
 
